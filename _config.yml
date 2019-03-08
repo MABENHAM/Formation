@@ -23,7 +23,6 @@ defaults:
     type: pages
   values:
     layout: page
-permalink: pretty
 - scope:
     path: ''
     type: cluster
