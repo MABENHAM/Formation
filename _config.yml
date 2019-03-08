@@ -11,6 +11,9 @@ collections:
   cluster:
     title: cluster
     output: true
+  videos:
+    title: videos
+    output: true
 defaults:
 - scope:
     path: ''
