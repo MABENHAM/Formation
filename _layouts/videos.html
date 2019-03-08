@@ -1,0 +1,26 @@
+      <!DOCTYPE html>
+  
+<html>
+  <head>
+    <title>Nomade</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  </head>
+  <body>
+    <h1>malika</h1>
+   <h2>{{page.title}}</h2>
+   <p>{{page.content}}</p>
+
+         <h3>{{ page.title2}}</h3>
+             <p>{{ page.release_date }}</p>
+             <p>{{ page.seo.title }}</p>
+             <p>{{ page.seo.description }}</p>
+ {% for auteur in page.auteur %}
+               <br>{{auteur}}
+
+
+ {% endfor %}
+ </body>
+
+
+</html>
+               

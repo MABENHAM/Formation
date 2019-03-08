@@ -35,6 +35,7 @@ defaults:
     path: ''
     type: videos
   values:
+    layout: videos
     title2: 
     release_date: 
     id_youtube_video: 
