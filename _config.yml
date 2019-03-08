@@ -29,3 +29,15 @@ defaults:
   values:
     layout: cluster
 permalink: pretty
+- scope:
+    path: ''
+    type: videos
+  values:
+    title2: 
+    release_date: 
+    id_youtube_video: 
+    SEO:
+      title: 
+      description: 
+    auteur:
+      - 
