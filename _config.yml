@@ -28,7 +28,6 @@ defaults:
     type: cluster
   values:
     layout: cluster
-permalink: pretty
 - scope:
     path: ''
     type: videos
@@ -41,3 +40,4 @@ permalink: pretty
       description: 
     auteur:
       - 
+permalink: pretty
