@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  cluster:
+    title: cluster
+    output: true
   interpretation:
     title: interpretation
     output: true
