@@ -24,3 +24,9 @@ defaults:
   values:
     layout: page
 permalink: pretty
+- scope:
+    path: ''
+    type: cluster
+  values:
+    layout: cluster
+permalink: pretty
