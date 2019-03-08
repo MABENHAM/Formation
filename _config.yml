@@ -11,12 +11,6 @@ collections:
   cluster:
     title: cluster
     output: true
-  interpretation:
-    title: interpretation
-    output: true
-  traduction:
-    title: traduction
-    output: true
 defaults:
 - scope:
     path: ''
