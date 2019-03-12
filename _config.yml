@@ -51,7 +51,7 @@ defaults:
     path: ''
     type: people
   values:
-    layout: 
+    layout: people
     nom: 
     prenom: 
     parents:
@@ -59,6 +59,6 @@ defaults:
       pere: 
     naissance_date: 
     image: 
-    liste frere et soeurs:
+    famille:
     - 
 permalink: pretty

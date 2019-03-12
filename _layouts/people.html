@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire People</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Formulaire People</h1>
+<input type="text" name="nom"><br></br>
+<form>
+  Nom: {{page.nom}}<br>
+  <input type="text" name="Nom"><br>
+  Prenom:{{page.prenom}}<br>
+  <input type="text" name="Prenom">
+  <h2>parents</h2>
+   mere: {{page.parents.mere}}<br>
+  <input type="text" name="mere"><br>
+  Pere:{{page.parents.pere}}<br>
+  <input type="text" name="Pere"></br>
+  <input type="date" max="2012-06-25" min="2011-08-13" name="naissance_date"><br></br>
+  <img src="/uploads/8f0532acfd_50077454_spider-face.jpg"></img><br></br>
+  {% for famille in page.famille %}
+               <br>{{famille}}
+
+
+ {% endfor %}
+</form>
+</body>
+</html>

@@ -8,7 +8,7 @@ parents:
   pere: abdou
 naissance_date: 2019-06-04 00:00:00 Z
 image: "/uploads/8f0532acfd_50077454_spider-face.jpg"
-liste frere et soeurs:
+famille:
 - manel
 - mariem
 - mahmoud
