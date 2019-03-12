@@ -68,7 +68,7 @@ defaults:
     layout: 
     etudes: 
     experience_academique: 
-    experience_professionelles:
+    experience_professionelles: 
     competences: 
-    image:  
+    image: 
 permalink: pretty
