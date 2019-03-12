@@ -53,10 +53,10 @@ defaults:
   values:
     layout: 
     nom: 
-    prenom:
+    prenom: 
     parents:
       mere: 
-      pere:
+      pere: 
     naissance_date: 
     image: 
     liste frere et soeurs:
