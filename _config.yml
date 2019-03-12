@@ -44,4 +44,18 @@ defaults:
       description: 
     auteur:
     - 
+- scope:
+    path: ''
+    type: people
+  values:
+    layout: 
+    nom: 
+    prenom:
+    parents:
+      mere: 
+      pere:
+    naissance_date: 
+    image: 
+    liste frere et soeurs:
+    - 
 permalink: pretty
