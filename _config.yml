@@ -11,6 +11,9 @@ collections:
   cluster:
     title: cluster
     output: true
+  people:
+    title: people
+    output: true
   videos:
     title: videos
     output: true
