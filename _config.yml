@@ -61,4 +61,14 @@ defaults:
     image: 
     famille:
     - 
+- scope:
+    path: ''
+    type: curriculum_vitae
+  values:
+    layout: 
+    etudes: 
+    experience_academique: 
+    experience_professionelles:
+    competences: 
+    image:  
 permalink: pretty
