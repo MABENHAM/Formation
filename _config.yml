@@ -11,6 +11,9 @@ collections:
   cluster:
     title: cluster
     output: true
+  curriculum-vitae:
+    title: curriculum_vitae
+    output: true
   people:
     title: people
     output: true
