@@ -66,7 +66,7 @@ defaults:
     - 
 - scope:
     path: ''
-    type: curriculum_vitae
+    type: curriculum-vitae
   values:
     layout: 
     etudes: 
