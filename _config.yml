@@ -88,12 +88,10 @@ defaults:
     Tags:
     - 
     Accordions:
+    -
       title: 
       accordions_image: 
-<<<<<<< HEAD
+      -
       text:
-=======
-      text: 
-    Description: 
->>>>>>> ec19e651b99181895415cac7e66e936444d66fb3
+
 permalink: pretty
