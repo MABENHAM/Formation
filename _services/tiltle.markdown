@@ -11,6 +11,13 @@ Accordions:
   accordions_image:
   - "/uploads/8f0532acfd_50077454_spider-face-e32c2b.jpg"
   text: xcvxcvxcvxcvxcvxcv
+- title: ville russe
+  accordions_image:
+  - "/uploads/8f0532acfd_50077454_spider-face-215a11.jpg"
+  text: Une ville russe de l'Arctique subit une invasion d'ours polaires, des dizaines
+    de prédateurs se sont imposés, obligeant le pays à être en état d'urgence dans
+    l'archipel russe de la Nouvelle-Zemble dans l'Arctique. 50 ours polaires harcèlent
+    les habitants pour trouver de la nourriture.
 Benefits:
 - cvxcvxvcvxc
 - wcwxcwcvwxv
