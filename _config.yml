@@ -87,4 +87,9 @@ defaults:
     image: 
     Tags : 
     -
+    Accordions:
+      title: 
+      accordions_image: 
+      text:
+    Description: 
 permalink: pretty
