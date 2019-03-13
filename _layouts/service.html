@@ -135,13 +135,11 @@ layout: default
                             </div>
                             <div class="sba-services-cards__card__content">
                                 <p class="sba-services-cards__card__content__title">cluster
-                                    0{{i}}<span>{{service.Airbus_fleet}}</span></p>
-                                <p class="sba-services-cards__card__content__text">For your entry into service, Services by Airbus
-                        offers
-                        an optimised initial provisioning package covering all material to start your operation.</p>
+                                    {{i}}<span>{{service.Airbus_fleet}}</span></p>
+                                <p class="sba-services-cards__card__content__text"></p>
                                 <ul class="sba-services-cards__card__content__list">
 
-                                    {% for service in service.Tags %}
+                                    {% for services in page.Tags %}
                                     {{ service }}
                                     {% endfor %}
              

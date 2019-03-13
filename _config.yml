@@ -71,7 +71,7 @@ defaults:
     path: ''
     type: curriculum-vitae
   values:
-    layout: curriculum-vitae.html
+    layout: curriculum-vitae
     etudes: 
     experience_academique: 
     experience_professionelles: 
