@@ -17,6 +17,9 @@ collections:
   people:
     title: people
     output: true
+  services:
+    title: services
+    output: true
   videos:
     title: videos
     output: true
