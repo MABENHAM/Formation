@@ -73,17 +73,19 @@ layout: default
                                     </svg>
                                 </li>
                             </ul>
-                            <div class="sba-accordion__panel__carousel__main" id="sba-carousel__main-0">
-                                {% for item in site.data.service.carousel %}
+                            <div class="sba-accordion__panel__carousel__main" id="sba-carousel__main-{{forloop.index0}}">
+
+                                {% for image in Accordion.accordions_image %}
+                              
+
                                 <div>
                                     <div>
-
-                                        <img class="{{page.Accordions.accordions_image}}" src="{{page.Accordions.accordions_image}}" alt=""/>
+                                       <img class="img-covered" src="{{image}}" alt=""/>
                                     </div>
                                 </div>
                                 {% endfor %}
                             </div>
-                            <ul class="sba-accordion__panel__carousel__thumbnails" id="sba-carousel__thumbnails-0">
+                            <ul class="sba-accordion__panel__carousel__thumbnails" id="sba-carousel__thumbnails-{{forloop.index0}}">
                                 {% for item in site.data.service.carousel %}
                                 <li>
                                     <img src="{{item.url}}" alt="">
