@@ -77,4 +77,14 @@ defaults:
     experience_professionelles: 
     competences: 
     image: 
+- scope:
+    path: ''
+    type: services
+  values:
+    layout: service
+    Airbus_fleet: 
+    Provided_by: 
+    image: 
+    Tags : 
+    -
 permalink: pretty
