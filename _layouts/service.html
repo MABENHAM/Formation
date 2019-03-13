@@ -75,7 +75,7 @@ layout: default
                             </ul>
                             <div class="sba-accordion__panel__carousel__main" id="sba-carousel__main-{{forloop.index0}}">
 
-                                {% for image in Accordion.accordions_image %}
+                                {% for image in Accordion.accordions_image | first%}
                               
 
                                 <div>
@@ -86,14 +86,14 @@ layout: default
                                 {% endfor %}
                             </div>
                             <ul class="sba-accordion__panel__carousel__thumbnails" id="sba-carousel__thumbnails-{{forloop.index0}}">
-                                {% for item in site.data.service.carousel %}
+                                  {% for image in Accordion.accordions_image %}
                                 <li>
-                                    <img src="{{item.url}}" alt="">
+                                    <img src="{{image}}" alt="">
                                 </li>
                                 {% endfor %}
                             </ul>
                         </div>
-                        <h2>{{Accordions.text}}</h2>
+                        {{Accordion.text}}
                         <a class="sba-btn sba-btn--secondary">Contact us
                         </a>
                     </div>
@@ -131,16 +131,21 @@ layout: default
                         <div class="sba-services-cards__card">
                             <div class="sba-services-cards__card__thumbnail">
                                 <img src="{{service.image}}" alt="">
-                                <span>{{service.title}}</span>
+                                <span>{{title}}</span>
                             </div>
                             <div class="sba-services-cards__card__content">
-                                <p class="sba-services-cards__card__content__title">Airbus Image
-                                    0{{i}}<span>Safety</span></p>
-                                <p class="sba-services-cards__card__content__text">Ergo ego senator inimicus, si
-                                    ita vultis, homini, amicus esse, sicut semper fuigo senator inimicus, si
-                                    ita vultis, homini, amicus esse, sicut semper fuigo senator inimicus, si
-                                    ita vultis, homini, amicus esse, sicut semper fui, rei publicae…</p>
+                                <p class="sba-services-cards__card__content__title">cluster
+                                    0{{i}}<span>{{service.Airbus_fleet}}</span></p>
+                                <p class="sba-services-cards__card__content__text">For your entry into service, Services by Airbus
+                        offers
+                        an optimised initial provisioning package covering all material to start your operation.</p>
                                 <ul class="sba-services-cards__card__content__list">
+
+                                    {% for service in service.Tags %}
+                                    {{ service }}
+                                    {% endfor %}
+             
+
                                     <li>A350</li>
                                     <li>A380</li>
                                     <li>A320</li>
