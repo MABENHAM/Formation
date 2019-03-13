@@ -92,8 +92,8 @@ defaults:
       accordions_image:
       - 
       text: 
-    Benefits: 
-    -
-    services: 
-    -
+    Benefits:
+    - 
+    services:
+    - 
 permalink: pretty
