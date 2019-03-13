@@ -94,6 +94,6 @@ defaults:
       text: 
     Benefits: 
     -
-    Service_push_list: 
+    services: 
     -
 permalink: pretty
