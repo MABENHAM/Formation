@@ -88,10 +88,8 @@ defaults:
     Tags:
     - 
     Accordions:
-    -
-      title: 
-      accordions_image: 
-      -
-      text:
-
+    - title: 
+      accordions_image:
+      - 
+      text: 
 permalink: pretty
