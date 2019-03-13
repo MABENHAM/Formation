@@ -92,8 +92,15 @@ defaults:
       accordions_image:
       - 
       text: 
+<<<<<<< HEAD
     Benefits: 
     -
     services: 
     -
+=======
+    Benefits:
+    - 
+    Service_push_list:
+    - 
+>>>>>>> 31e13d8a3b8dea92c8933dbd716d25fe89f3eba9
 permalink: pretty
