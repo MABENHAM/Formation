@@ -85,11 +85,11 @@ defaults:
     Airbus_fleet: 
     Provided_by: 
     image: 
-    Tags : 
-    -
+    Tags:
+    - 
     Accordions:
       title: 
       accordions_image: 
-      text:
+      text: 
     Description: 
 permalink: pretty
