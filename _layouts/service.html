@@ -9,19 +9,27 @@ layout: default
     <div class="sba-body-inner">
         <section class="grid sba-services-header" grid-gap="row">
             <div class="grid-item" grid-size="12/12">
-                <h1 class="sba-t3">Provisionning Solutions</h1>
+                <h1 class="sba-t3">{{page.title}}</h1>
                 <div class="sba-services-header__infos">
-                    <span><strong>Optimised Aircraft Availability</strong></span>
-                    <span>Applicability: <strong>Airbus fleet</strong></span>
+
+                    
+                    <span><strong>cluster.title</strong></span>
+                    <span>Applicability: <strong>{{page.Airbus_fleet}}</strong></span>
                     <div class="sba-services-header__infos__supplier">
-                        <span>Provided by :</span>
+                        <span>{{page.Provided_by}}</span>
+
                         <div class="sba-services-header__infos__supplier-logo">
-                            <img src="http://via.placeholder.com/350x50" alt="supplier-name">
+                            <img src="{{page.image}}" alt="supplier-name">
                         </div>
                     </div>
                 </div>
                 <div class="sba-services-header__labels">
-                    <span class="sba-services-header__labels__title">Aircraft Family : </span>
+
+
+                    <span class="sba-services-header__labels__title">Aircraft Family: </span>
+{% for Tags in page.Tags %}
+  {{ tags }}
+{% endfor %}
                     <span class="sba-services-header__labels__aircraft">A350</span>
                     <span class="sba-services-header__labels__aircraft">A320</span>
                     <span class="sba-services-header__labels__aircraft">A380</span>
@@ -36,10 +44,14 @@ layout: default
                 <a class="sba-services-header__contact-btn sba-btn sba-btn--secondary">Contact us</a>
             </div>
         </section>
+
+
+{% for Accordion in page.Accordions %}
+
         <section class="sba-services-accordions">
             <div class="js-accordion" data-accordion-prefix-classes="sba">
                 <span class="sba-t2 sba-services-accordions__accordion js-accordion__header"
-                      data-accordion-opened="true">Provisioning Packages
+                      data-accordion-opened="true">{{Accordion.title}}
                     <span class="sba-services-accordions__accordion__icon">
                         <svg>
                             <use xlink:href="/assets/media/svgs/spr-sba.svg#chevron_up"/>
@@ -65,7 +77,7 @@ layout: default
                                 {% for item in site.data.service.carousel %}
                                 <div>
                                     <div>
-                                        <img class="img-covered" src="{{item.url}}" alt=""/>
+                                        <img class="{{page.Accordions.accordions_image}}" src="{{item.url}}" alt=""/>
                                     </div>
                                 </div>
                                 {% endfor %}
@@ -78,207 +90,27 @@ layout: default
                                 {% endfor %}
                             </ul>
                         </div>
-                        <h2>Lorem ipsum indolor</h2>
-                        <p>Based on the Fly Away Kit Recommendation,
-                            all parts and tooling required to take on-board
-                            can
-                            be
-                            purchased via an Airbus Fly Away Kit Package deal at attractive special
-                            requirements.</p>
-                        <p>This solution provides the most convenient
-                            way of purchasing all spares of the Fly Away
-                            Kit
-                            Recommendation. To minimise your administration process and to save parts ordering for
-                            you.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <ul>
-                            <li>Objects (aircraft, buildings, cranes, etc.) are modelled in 3D with high resolution</li>
-                            <li>Resolution of ILS signal propagation equations uses exact methods</li>
-                            <li>Airport ground levels are taken into account.</li>
-                        </ul>
+                        <h2>{{Accordions.text}}</h2>
                         <a class="sba-btn sba-btn--secondary">Contact us
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="sba-services-accordions">
-            <div class="js-accordion" data-accordion-prefix-classes="sba">
-                <span class="sba-t2 sba-services-accordions__accordion js-accordion__header"
-                      data-accordion-opened="true">Provisioning Packages
-                    <span class="sba-services-accordions__accordion__icon">
-                        <svg>
-                            <use xlink:href="/assets/media/svgs/spr-sba.svg#chevron_up"/>
-                        </svg>
-                    </span>
-                </span>
-                <div class="js-accordion__panel sba-accordion__panel">
-                    <div class="sba-accordion__panel__content">
-                        <div class="sba-accordion__panel__carousel">
-                            <ul class="controls" id="sba-carousel__controls-1">
-                                <li class="prev">
-                                    <svg width="9" height="12">
-                                        <use xlink:href="/assets/media/svgs/spr-sba.svg#ltr-arrow"/>
-                                    </svg>
-                                </li>
-                                <li class="next">
-                                    <svg width="9" height="12">
-                                        <use xlink:href="/assets/media/svgs/spr-sba.svg#ltr-arrow"/>
-                                    </svg>
-                                </li>
-                            </ul>
-                            <div class="sba-accordion__panel__carousel__main" id="sba-carousel__main-1">
-                                {% for item in site.data.service.carousel %}
-                                <div>
-                                    <div>
-                                        <img src="{{item.url}}" alt="">
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-                            <ul class="sba-accordion__panel__carousel__thumbnails" id="sba-carousel__thumbnails-1">
-                                {% for item in site.data.service.carousel %}
-                                <li>
-                                    <img src="{{item.url}}" alt="">
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        <h2>Lorem ipsum indolor</h2>
-                        <p>Based on the Fly Away Kit Recommendation,
-                            all parts and tooling required to take on-board
-                            can
-                            be
-                            purchased via an Airbus Fly Away Kit Package deal at attractive special
-                            requirements.</p>
-                        <p>This solution provides the most convenient
-                            way of purchasing all spares of the Fly Away
-                            Kit
-                            Recommendation. To minimise your administration process and to save parts ordering for
-                            you.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <ul>
-                            <li>Objects (aircraft, buildings, cranes, etc.) are modelled in 3D with high resolution</li>
-                            <li>Resolution of ILS signal propagation equations uses exact methods</li>
-                            <li>Airport ground levels are taken into account.</li>
-                        </ul>
-                        <a class="sba-btn sba-btn--secondary">Contact us
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+             {% endfor %}
         </section>
 
-        <section class="sba-services-accordions">
-            <div class="js-accordion" data-accordion-prefix-classes="sba">
-                <span class="sba-t2 sba-services-accordions__accordion js-accordion__header">Fly away kit packages
-                    <span class="sba-services-accordions__accordion__icon">
-                        <svg>
-                            <use xlink:href="/assets/media/svgs/spr-sba.svg#chevron_up"/>
-                        </svg>
-                    </span>
-                </span>
-                <div class="js-accordion__panel sba-accordion__panel">
-                    <div class="sba-accordion__panel__content">
-                        <h2>Lorem ipsum indolor</h2>
-                        <p>Based on the Fly Away Kit Recommendation,
-                            all parts and tooling required to take on-board
-                            can
-                            be
-                            purchased via an Airbus Fly Away Kit Package deal at attractive special
-                            requirements.</p>
-                        <p>This solution provides the most convenient
-                            way of purchasing all spares of the Fly Away
-                            Kit
-                            Recommendation. To minimise your administration process and to save parts ordering for
-                            you.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <ul>
-                            <li>Objects (aircraft, buildings, cranes, etc.) are modelled in 3D with high resolution</li>
-                            <li>Resolution of ILS signal propagation equations uses exact methods</li>
-                            <li>Airport ground levels are taken into account.</li>
-                        </ul>
-                        <a class="sba-btn sba-btn--secondary">Contact us
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sba-services-accordions">
-            <div class="js-accordion" data-accordion-prefix-classes="sba">
-                <span class="sba-t2 sba-services-accordions__accordion js-accordion__header">Fly away kit packages
-                    <span class="sba-services-accordions__accordion__icon">
-                        <svg>
-                            <use xlink:href="/assets/media/svgs/spr-sba.svg#chevron_up"/>
-                        </svg>
-                    </span>
-                </span>
-                <div class="js-accordion__panel sba-accordion__panel">
-                    <div class="sba-accordion__panel__content">
-                        <h2>Lorem ipsum indolor</h2>
-                        <p>Based on the Fly Away Kit Recommendation,
-                            all parts and tooling required to take on-board
-                            can
-                            be
-                            purchased via an Airbus Fly Away Kit Package deal at attractive special
-                            requirements.</p>
-                        <p>This solution provides the most convenient
-                            way of purchasing all spares of the Fly Away
-                            Kit
-                            Recommendation. To minimise your administration process and to save parts ordering for
-                            you.</p>
-                        <p>By taking the recommended parts and tooling
-                            on board the aircraft operators can become
-                            independent of local parts, tooling availabilities and service providers. It is designed
-                            to
-                            save
-                            grounding time caused by potential spares parts shortages at exotic destinations.</p>
-                        <ul>
-                            <li>Objects (aircraft, buildings, cranes, etc.) are modelled in 3D with high resolution</li>
-                            <li>Resolution of ILS signal propagation equations uses exact methods</li>
-                            <li>Airport ground levels are taken into account.</li>
-                        </ul>
-                        <a class="sba-btn sba-btn--secondary">Contact us
-                        </a>
-                    </div>
 
-                </div>
-            </div>
-        </section>
+
+
+       
     </div>
     <section class="sba-services-benefits">
         <div class="sba-body-inner">
             <h3 class="sba-services-benefits__title">Benefits</h3>
             <ul class="sba-services-benefits__list">
-                {% for benefit in site.data.service.benefits %}
-                <li>{{benefit.text}}</li>
+                {% for Benefits in page.Benefits %}
+                <li>{{Benefits}}</li>
                 {% endfor %}
             </ul>
         </div>
@@ -287,13 +119,15 @@ layout: default
         <h3 class="sba-services-cards-title">You <span>may like</span></h3>
         <section class="sba-services-cards">
             <div class="sba-grid sba-grid--equalHeight sba-grid--1col@M sba-grid--2col@XL sba-grid--4col">
-                {% for i in (1..4) %}
+
+                  {% for service_title in page.services %}
+                {% assign service = site.services | where:"title", service_title | first %} 
                 <div class="sba-grid__item">
                     <a href="#">
                         <div class="sba-services-cards__card">
                             <div class="sba-services-cards__card__thumbnail">
-                                <img src="/assets/media/images/img-card-{{i}}.png" alt="">
-                                <span>Cross service number number number number {{i}}</span>
+                                <img src="{{service.image}}" alt="">
+                                <span>{{service.title}}</span>
                             </div>
                             <div class="sba-services-cards__card__content">
                                 <p class="sba-services-cards__card__content__title">Airbus Image
@@ -317,6 +151,7 @@ layout: default
                         </div>
                     </a>
                 </div>
+
                 {% endfor %}
             </div>
         </section>
