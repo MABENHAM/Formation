@@ -88,7 +88,8 @@ defaults:
     Tags:
     - 
     Accordions:
-    - title: 
+    - 
+      title: 
       accordions_image:
       - 
       text: 
