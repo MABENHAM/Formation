@@ -1,8 +1,8 @@
 ---
 title: Tiltle
 date: 2019-03-13 10:33:00 Z
-Airbus_fleet: wxvwxvvwxcvwxcv
-Provided_by: wxvxvwxcvwxv
+Airbus_fleet: Airbus fleet
+Provided_by: In-flight Experience
 image: "/uploads/beth-cf3f8f.jpg"
 Tags:
 - cbvxcbxcb
@@ -10,6 +10,7 @@ Accordions:
 - title: Beth Hart
   accordions_image:
   - "/uploads/beth.jpg"
+  - 
   text: |-
     Beth Hart (born January 24, 1972) is an American singer, songwriter and musician from Los Angeles, California. She rose to fame with the release of her 1999 single "LA Song (Out of This Town)" from her second album Screamin' for My Supper. The single was a number one hit in New Zealand, as well as reaching the top 5 of the US Adult Contemporary and Top 10 on the Billboard Adult Top 40 charts.
 
