@@ -85,6 +85,6 @@ defaults:
     Airbus_fleet: 
     Provided_by: 
     image: 
-    Tags : 
-    -
+    Tags:
+    - 
 permalink: pretty
