@@ -1,0 +1,70 @@
+<div class="sba-corpobar">
+    <div class="sba-corpobar__inner">
+        <nav class="sba-corpobar__navigation">
+            <ul class="sba-corpobar__navigation-list">
+                {% for item in site.data.header.top_navigation %}
+                <li class="sba-corpobar__navigation-item">
+                    <a class="sba-corpobar__navigation-link" href="#">
+                        {% if item.icon %}
+                        <svg width="17" height="17">
+                            <use xlink:href="/assets/media/svgs/spr-sba.svg#{{ item.icon }}">
+                        </svg>
+                        {% endif %}
+                        <span>{{ item.title }}</span>
+                    </a>
+                    {% if item.list %}
+                    <ul class="sba-corpobar__navigation-sublist">
+                        {% for subitem in item.list %}
+                        <li class="sba-corpobar__navigation-subitem">
+                            <a class="sba-corpobar__navigation-sublink" href="#">{{ subitem.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<header class="sba-header">
+    <div class="sba-header__inner">
+        <div class="sba-header__logo" href="#">
+            <div class="sba-logo">
+                <a href="https://services.airbus.com">
+                    <img class="sba-logo__image" src="/assets/media/svgs/airbus.svg" alt="AIRBUS">
+                    <b class="sba-logo__text">services</b>
+                </a>
+            </div>
+        </div>
+        <button class="sba-header__burger" aria-hidden="true">Ouvrir/fermer la navigation<span></span></button>
+        <div class="sba-header__content">
+            {% if site.data.header.navigation %}
+            <nav class="sba-header__navigation">
+                <ul class="sba-header__navigation-list">
+                    {% for item in site.data.header.navigation %}
+                    <li class="sba-header__navigation-item {% if item.store %} sba-header__navigation-item--store{% endif %}">
+                        <a class="sba-header__navigation-link {% if item.store %} sba-header__navigation-link--store{% endif %}"
+                           href="{{ item.url | default: '#' }}">{{ item.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+
+        <button class="sba-header__search" aria-hidden="true">
+            <svg width="18" height="18">
+                <title>Ouvrir/fermer la recherche</title>
+                <use xlink:href="/assets/media/svgs/spr-sba.svg#search">
+            </svg>
+        </button>
+    </div>
+</header>
+
+
+
+
+
+

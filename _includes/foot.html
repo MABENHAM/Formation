@@ -1,0 +1,59 @@
+</div><!-- /.sba-site -->
+<div class="sba-popin">
+    <div class="sba-popin__inner">
+        <button class="sba-popin__close">Fermer la popin</button>
+        <div class="sba-popin__body"></div>
+    </div>
+</div>
+<script src="/assets/vendor/modernizr-custom.js"></script>
+<script src="/assets/vendor/svgxuse/svgxuse.min.js"></script>
+<script src="/assets/scripts/script.js?{{site.time | date: '%s%N'}}"></script>
+<script>
+    function loadScript(n, o) {
+        var r = document.createElement("script");
+        r.src = n, r.onload = function () {
+            o()
+        }, r.onerror = function () {
+            o(new Error("Failed to load script " + n))
+        }, document.head.appendChild(r)
+    }
+
+    function initOFI() { /* polyfill object-fit IE */
+        if (document.querySelectorAll('.img-contained, .img-covered')) {
+            objectFitImages('img.img-contained, img.img-covered');
+        }
+    };
+
+    function initStickyBits() { /* polyfill position sticky IE */
+        const stickyElts = ['.sba-breadcrumb', '.sba-header', '.sba-cluster__nav']
+        stickyElts.forEach(function (elem) {
+            let elt = document.querySelector(elem);
+            if (elt) elt.classList.add('sticky-ie');
+        });
+        const elements = document.querySelectorAll('.sticky-ie');
+        Stickyfill.add(elements);
+    }
+
+    function initSkrollr() { /* polyfill object-fit IE */
+        var s = skrollr.init({forceHeight: false});
+
+        /*/ Disable skrollr on mobile */
+        if (s.isMobile()) {
+            s.destroy();
+        }
+    };
+
+    if (Modernizr.objectfit) {
+        loadScript('/assets/vendor/skrollr.min.js', initSkrollr)
+    }
+    if (!Modernizr.objectfit) {
+        loadScript('/assets/vendor/ofi.min.js', initOFI);
+    }
+    if (!Modernizr.csspositionsticky) {
+        loadScript('/assets/vendor/stickyfill.min.js', initStickyBits);
+    }
+
+</script>
+
+</body>
+</html>

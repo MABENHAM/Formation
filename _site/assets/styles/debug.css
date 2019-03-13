@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* Colors */
+/*@import "bases/debug";*/
+body::before {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #fff;
+  content: var(--size);
+  font-family: monospace;
+  font-size: .75rem;
+  padding: .25em .5em;
+  position: fixed;
+  right: 0;
+  z-index: 101; }
+@media (min-width: 1153px) {
+  body {
+    --size: "@XXL ≥ 1153px"; } }
+@media (min-width: 865px) and (max-width: 1152px) {
+  body {
+    --size: "865px ≥ @XL ≥ 1152px"; } }
+@media (min-width: 576px) and (max-width: 864px) {
+  body {
+    --size: "576px ≥ @L ≥ 864px"; } }
+@media (min-width: 385px) and (max-width: 575px) {
+  body {
+    --size: "385px ≥ @M ≥ 575px"; } }
+@media (min-width: 320px) and (max-width: 384px) {
+  body {
+    --size: "320px ≥ @S ≥ 384px"; } }
+@media (max-width: 319px) {
+  body {
+    --size: "OUT!"; } }
+[grid-debug] {
+  background-image: linear-gradient(to right, transparent 12px, rgba(250, 0, 150, 0.2) 12px) !important;
+  background-position: -6px 0 !important;
+  background-size: calc((100% + 12px) * 1 / 12) !important;
+  background-clip: content-box !important; }
+
+/*# sourceMappingURL=debug.css.map */

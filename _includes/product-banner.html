@@ -1,0 +1,19 @@
+<div class="sba-productBanner"
+     style="background-image:url({{ product_banner.image }})"
+>
+    <div class="sba-productBanner__inner"
+         data-bottom-top="transform: translateX(-50vw); opacity: 0;"
+         data-center="transform: translateX(0); opacity: 1;">
+        <h3 class="sba-productBanner__title">{{ product_banner.title }}</h3>
+        <p class="sba-productBanner__subtitle">{{ product_banner.subtitle }}</p>
+        {% if product_banner.button %}
+        <p class="sba-productBanner__action">
+            <a class="sba-button sba-btn sba-home-btn"
+               href="{{ product_banner.button.url }}"
+            >
+                {{ product_banner.button.text_display }}
+            </a>
+        </p>
+        {% endif %}
+    </div>
+</div>

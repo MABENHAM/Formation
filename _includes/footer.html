@@ -1,0 +1,57 @@
+<div class="sba-backtotop">
+    <a class="sba-backtotop__inner" href="#Top">
+        <span class="sba-backtotop__icon">
+            <svg width="12" height="5">
+                <use xlink:href="/assets/media/svgs/spr-sba.svg#bt-arrow">
+            </svg>
+        </span>
+        <span class="sba-backtotop__text">Back to top</span>
+    </a>
+</div>
+
+<footer class="sba-footer">
+    <div class="sba-footer__inner">
+        <div class="sba-grid sba-grid--2col sba-grid--1col@M">
+            <div class="sba-grid__item">
+                <div class="sba-footer__sitemap">
+                    <a class="sba-button sba-button--small" href="#">Sitemap</a>
+                </div>
+            </div>
+            <div class="sba-grid__item">
+                <a class="sba-footer__social" href="#">
+                    <span class="sba-footer__social-text">Find us on social media</span>
+                    <svg class="sba-footer__social-icon" width="9" height="12">
+                        <use xlink:href="/assets/media/svgs/spr-sba.svg#ltr-arrow">
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% if site.data.footer.navigation %}
+    <div class="sba-footer__inner">
+        <nav class="sba-footer__navigation">
+            <ul class="sba-grid sba-grid--4col sba-grid--2col@L sba-grid--1col@M">
+                {% for item in site.data.footer.navigation %}
+                <li class="sba-grid__item">
+                    <strong class="sba-footer__navigation-section">{{ item.title }}</strong>
+                    {% if item.list[0] %}
+                    <ul class="sba-footer__navigation-sublist">
+                        {% for subitem in item.list %}
+                        <li class="sba-footer__navigation-subitem">
+                            <a class="sba-footer__navigation-link" href="{{ subitem.url | default: '#' }}">{{ subitem.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+
+    <div class="sba-footer__inner sba-footer__inner--small">
+        <div class="sba-footer__copy">&copy;AIRBUS SAS {{ "now" | date: "%Y" }}. All rights reserved</div>
+    </div>
+</footer>
