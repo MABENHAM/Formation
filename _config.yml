@@ -85,7 +85,6 @@ defaults:
     Airbus_fleet: 
     Provided_by: 
     image: 
-<<<<<<< HEAD
     Tags : 
     -
     Accordions:
@@ -93,8 +92,4 @@ defaults:
       accordions_image: 
       text:
     Description: 
-=======
-    Tags:
-    - 
->>>>>>> bb02716eedec06eec53b2d8675ea4e0ce6b42814
 permalink: pretty
