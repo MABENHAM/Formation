@@ -77,7 +77,8 @@ layout: default
                                 {% for item in site.data.service.carousel %}
                                 <div>
                                     <div>
-                                        <img class="{{page.Accordions.accordions_image}}" src="{{item.url}}" alt=""/>
+
+                                        <img class="{{page.Accordions.accordions_image}}" src="{{page.Accordions.accordions_image}}" alt=""/>
                                     </div>
                                 </div>
                                 {% endfor %}
@@ -120,8 +121,9 @@ layout: default
         <section class="sba-services-cards">
             <div class="sba-grid sba-grid--equalHeight sba-grid--1col@M sba-grid--2col@XL sba-grid--4col">
 
-                  {% for service_title in page.services %}
+                {% for service_title in page.services %}
                 {% assign service = site.services | where:"title", service_title | first %} 
+
                 <div class="sba-grid__item">
                     <a href="#">
                         <div class="sba-services-cards__card">
