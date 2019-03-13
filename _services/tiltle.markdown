@@ -19,8 +19,12 @@ Accordions:
     l'archipel russe de la Nouvelle-Zemble dans l'Arctique. 50 ours polaires harcèlent
     les habitants pour trouver de la nourriture.
 Benefits:
-- cvxcvxvcvxc
-- wcwxcwcvwxv
+- Abdouu
+- awatef
+- malika
+- 'Mariem '
+- Manel
+- Mahmoudd
 services:
 - Tiltle
 - Tiltle
