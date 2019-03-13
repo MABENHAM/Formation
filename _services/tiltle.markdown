@@ -3,14 +3,19 @@ title: Tiltle
 date: 2019-03-13 10:33:00 Z
 Airbus_fleet: wxvwxvvwxcvwxcv
 Provided_by: wxvxvwxcvwxv
-image: "/uploads/8f0532acfd_50077454_spider-face-40629d.jpg"
+image: "/uploads/beth-cf3f8f.jpg"
 Tags:
 - cbvxcbxcb
 Accordions:
-- title: xcvcxvxcv
+- title: Beth Hart
   accordions_image:
-  - "/uploads/8f0532acfd_50077454_spider-face-e32c2b.jpg"
-  text: xcvxcvxcvxcvxcvxcv
+  - "/uploads/beth.jpg"
+  text: |-
+    Beth Hart (born January 24, 1972) is an American singer, songwriter and musician from Los Angeles, California. She rose to fame with the release of her 1999 single "LA Song (Out of This Town)" from her second album Screamin' for My Supper. The single was a number one hit in New Zealand, as well as reaching the top 5 of the US Adult Contemporary and Top 10 on the Billboard Adult Top 40 charts.
+
+    Subsequent albums namely Seesaw and Live in Amsterdam by Hart and Joe Bonamassa debuted at number 1 on the Billboard Blues Album Chart, a chart she has now topped six times. Hart has had two number 1 singles in Denmark, "As Good as It Gets" and "Learning to Live", as well a double platinum-selling album, Leave the Light On.
+
+    Hart's first album with Bonamassa, Don't Explain, went gold in the Netherlands, while their 2014 collaboration Seesaw was nominated for a Grammy Award, and gave Hart her first Blues Music Award nomination in the category 'Best Contemporary Blues Female Artist'.
 - title: ville russe
   accordions_image:
   - "/uploads/8f0532acfd_50077454_spider-face-215a11.jpg"
