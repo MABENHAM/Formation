@@ -98,4 +98,20 @@ defaults:
     - 
     cluster:
     - 
+- scope:
+    path: ''
+    type: formulaire
+  values:
+    layout: 
+    nom_passeport: 
+    prenom_passeport: 
+    image_passeport: 
+    date_naissance: 
+    adresse:
+    - nom_rue: 
+      code_postale:
+      appartement: 
+      etage: 
+    cluster:
+    - 
 permalink: pretty

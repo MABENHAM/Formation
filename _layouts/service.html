@@ -11,14 +11,16 @@ layout: default
             <div class="grid-item" grid-size="12/12">
                 <h1 class="sba-t3">{{page.title}}</h1>
 
-                 
-                   
-                  {% assign cluster = site.clusters | where:"title"| first %}    
-                    <div class="sba-services-header__infos">
-                      
-                    <span><strong>{{cluster.title}}</strong></span>
+                  {% assign cluster_list = site.cluster | where:"title", page.cluster %} 
 
-                    <span>Applicability: <strong>{{page.cluster}}</strong></span>
+                    <div class="sba-services-header__infos">
+                    <span><strong>
+                    {% for c in cluster_list %}
+                    {{c}}
+                    {% endfor %}
+                    </strong></span>
+
+                    <span>Applicability: <strong>{{page.Airbus_fleet}}</strong></span>
                     <div class="sba-services-header__infos__supplier">
                         <span>{{page.Provided_by}}</span>
 
