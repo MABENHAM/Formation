@@ -27,13 +27,11 @@ layout: default
 
 
                     <span class="sba-services-header__labels__title">Aircraft Family: </span>
-{% for Tags in page.Tags %}
-  {{ tags }}
-{% endfor %}
-                    <span class="sba-services-header__labels__aircraft">A350</span>
-                    <span class="sba-services-header__labels__aircraft">A320</span>
-                    <span class="sba-services-header__labels__aircraft">A380</span>
-                    <span class="sba-services-header__labels__aircraft">A310</span>
+                        {% for tag in page.Tags limit:2 %}
+                        <span class="sba-services-header__labels__aircraft">{{ tag }}</span>
+                        {% endfor %}
+                    
+                 
                 </div>
                 <div class="sba-services-header__description">
                     <p class="sba-services-header__description__text">For your entry into service, Services by Airbus
@@ -131,25 +129,20 @@ layout: default
                         <div class="sba-services-cards__card">
                             <div class="sba-services-cards__card__thumbnail">
                                 <img src="{{service.image}}" alt="">
-                                <span>{{title}}</span>
+                                <span>{{service.title}}</span>
                             </div>
                             <div class="sba-services-cards__card__content">
                                 <p class="sba-services-cards__card__content__title">cluster
                                     {{i}}<span>{{service.Airbus_fleet}}</span></p>
-                                <p class="sba-services-cards__card__content__text"></p>
+                                <p class="sba-services-cards__card__content__text">For your entry into service, Services by Airbus offers an optimised initial provisioning package covering all material to start your operation.</p>
                                 <ul class="sba-services-cards__card__content__list">
 
-                                    {% for services in page.Tags %}
-                                    {{ service }}
+                                   
+                                    
+                                    {% for tags in service.Tags %}
+                                    <li>{{tags}}</li>
                                     {% endfor %}
-             
 
-                                    <li>A350</li>
-                                    <li>A380</li>
-                                    <li>A320</li>
-                                    <li>A320</li>
-                                    <li>A320</li>
-                                    <li>A320</li>
                                 </ul>
                                 <div class="sba-services-cards__card__content__cta">
                                     <button class="sba-btn">More</button>
