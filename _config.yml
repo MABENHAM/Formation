@@ -109,7 +109,7 @@ defaults:
     nom_passeport: 
     prenom_passeport: 
     passeport_image: 
-    date_naissance: 
+    naissance_date_date: 
     adresse:
     - nom_rue: 
       code_postale: 
