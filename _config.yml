@@ -110,7 +110,7 @@ defaults:
     prenom_passeport: 
     passeport_image: 
     naissance_date_date: 
-    question:
+    question: 
     adresse:
     - nom_rue: 
       code_postale: 
