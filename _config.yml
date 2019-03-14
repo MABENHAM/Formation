@@ -108,7 +108,7 @@ defaults:
     layout: 
     nom_passeport: 
     prenom_passeport: 
-    image_passeport: 
+    passeport_image: 
     date_naissance: 
     adresse:
     - nom_rue: 
