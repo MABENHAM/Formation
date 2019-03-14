@@ -96,6 +96,6 @@ defaults:
     - 
     services:
     - 
-    cluster: 
-    -
+    cluster:
+    - 
 permalink: pretty
