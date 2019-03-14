@@ -112,7 +112,7 @@ defaults:
     date_naissance: 
     adresse:
     - nom_rue: 
-      code_postale:
+      code_postale: 
       appartement: 
       etage: 
     cluster:
