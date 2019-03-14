@@ -12,8 +12,11 @@ layout: default
                 <h1 class="sba-t3">{{page.title}}</h1>
                 <div class="sba-services-header__infos">
 
+
+ 
+                    {% assign cluster = site.clusters | where:"title"| first %}
                     
-                    <span><strong>cluster.title</strong></span>
+                    <span><strong>{{cluster.title}}</strong></span>
                     <span>Applicability: <strong>{{page.Airbus_fleet}}</strong></span>
                     <div class="sba-services-header__infos__supplier">
                         <span>{{page.Provided_by}}</span>
@@ -22,6 +25,7 @@ layout: default
                             <img src="{{page.image}}" alt="supplier-name">
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
                 <div class="sba-services-header__labels">
 
