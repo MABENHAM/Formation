@@ -36,6 +36,7 @@ services:
 - Tiltle
 - Tiltle
 - 
+cluster: 
 ---
 
 "Les gens ont peur, ils ont peur de sortir, la vie quotidienne est dans la tourmente, les parents craignent de laisser les enfants aller dans les écoles et les jardins d'enfants" , a déclaré le chef adjoint de l'administration locale, Aleksandr Minayev. Cela fait plusieurs semaines que des habitants de l'archipel russe de Nouvelle-Zemble dans l'Arctique doivent faire face à une invasion d'ours polaires, cherchant à manger.
