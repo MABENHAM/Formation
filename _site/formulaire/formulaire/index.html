@@ -1,58 +1,47 @@
+
+
+<!DOCTYPE html>
+
+
 <html>
-<head>
-<title>Un exemple simple de formulaire</title>
-</head>
+
+
 <body>
 
-<H1>Exemple simple de formulaire utilisant l'interface CGI</H1>
-<P>
-Ceci est un formulaire simple qui illustre l'utilisation de
-la bibliothèque de fonctions CGI permettant de traiter
-les informations saisies dans les zones de dialogue.
-</P>
-<HR>
+<form>
+  Nom: ben hammouda<br>
+  <input type="text" name="nom_passeport"><br>
+  Prenom:malikaaa<br>
+  <input type="text" name="prenom_passeport">
+  <input type="date" max="2012-06-25" min="2011-08-13" name="naissance_date_date"><br></br>
 
 
-<form method="post" action="formulaire-simple.cgi">
-<H2></H2>
-Quel est votre prénom ? <input name="prenom">
-<P>
-Quel est votre nom ? <input name="nom">
-<P>
-Quelle est votre couleur favorite ?
- <select name="couleur">
- <option selected>blanc
- <option>jaune
- <option>orange
- <option>rouge
- <option>vert
- <option>bleu
- <option>violet
- <option>noir
- </select>
-<P>
+		<P>
+		
+		<input type="radio" name="choix" value="oui" checked> Oui
+		ou
+		<input type="radio" name="choix" value="non"> Non
+		<P>
 
 
-Aimez vous l'informatique ?
-<input type="radio" name="choix" value="oui" checked> Oui
-ou
-<input type="radio" name="choix" value="non"> Non
-<P>
+  <h2>Adresse</h2>
+   Rue: <br>
+  <input type="text" name="nom_rue"><br>
+  code postale:<br>
+  <input type="text" name="code_postale"></br>
+  appartement:<br>
+  <input type="text" name="appartement"></br>
+   etage:<br>
+  <input type="text" name="etage"></br>
 
+  <img src="/uploads/8f0532acfd_50077454_spider-face.jpg"></img><br></br>
+  
 
-Veuillez expliquer brièvement ci-dessous le choix que vous venez de faire :
-<input name="message" size=60,5>
-<P>
+  </form>
 
-
-Cliquez sur <input type="submit" value="Valider"> pour soumettre votre requête.,
- sinon <input type="reset" value="Annuler">
-</form>
-
-
-<address>Philippe Dax / dax@inf.enst.fr</address>
-$Date: 20/09/1995 $
-
-
+   
 </body>
 </html>
+
+
+
