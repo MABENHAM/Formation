@@ -119,4 +119,5 @@ defaults:
     cluster:
     - 
     video_files: 
+    -
 permalink: pretty
