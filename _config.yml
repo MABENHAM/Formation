@@ -118,5 +118,5 @@ defaults:
       etage: 
     cluster:
     - 
-    video_files:
+    video_files: 
 permalink: pretty
