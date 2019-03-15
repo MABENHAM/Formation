@@ -43,9 +43,9 @@ defaults:
     type: cluster
   values:
     layout: cluster
-    interpretation_conf_simultanne:
-    interpretation_conf_consecutive:
-    interpretation_liaison:
+    interpretation_conf_simultanne: 
+    interpretation_conf_consecutive: 
+    interpretation_liaison: 
 - scope:
     path: ''
     type: videos
