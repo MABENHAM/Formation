@@ -10,4 +10,4 @@ interpretation_liaison: 'L’interprète intervient au fur et à mesure des conv
   : visites de site, négociations commerciales, signatures de contrat, rendez-vous…'
 ---
 
-sdsdsdsdggg
+Nos interprètes professionnels assurent la traduction orale de vos événements
